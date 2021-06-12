@@ -1,0 +1,52 @@
+:root {
+    --darkGray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --verydarkgray: hsl(0, 0%, 27%);
+}
+
+
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+ *, *:before, *:after {
+    box-sizing: inherit;
+ }
+
+ * {
+    margin: 0;
+    padding: 0;
+ }
+ul, li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+ body {
+     font-size: 1.4em;
+     font-family: 'Spartan', sans-serif;
+ }
+
+
+ header .nav1 {
+     display: flex;
+     justify-content: flex-start;
+     padding: 1.5em 4em;
+ }
+ .nav1 h1 {
+     font-size: 1em;
+     padding-right: 2em;
+ }
+.nav-list li {
+    display: inline-block;
+    padding-right: 2em;
+}
+ 
+ 
