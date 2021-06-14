@@ -83,6 +83,24 @@ color: var(--verydarkgray);
     font-weight: 700;
     font-size: 0.5em
 }
+.innovation p:nth-of-type(3) {
+    position: relative;
+    left: -3em;
+    top: 3.55em;
+}
+
+.innovation p:nth-of-type(3) .left-arrow,
+.innovation p:nth-of-type(3) .right-arrow {
+    padding: 0.8em 1.2em;
+    background-color: hsl(0, 0%, 0%);
+    margin-left: 0;
+    cursor: pointer;
+}
+.innovation p:nth-of-type(3) .left-arrow:hover,
+.innovation p:nth-of-type(3) .right-arrow:hover {
+background-color: hsl(0, 0%, 27%);
+}
+
 .sub-content {
 display: flex;
 position: relative;
@@ -98,6 +116,7 @@ text-transform: uppercase;
 font-size: 0.5em;
 letter-spacing: 8px;
 font-weight: 700;
+
 }
 .about p {
     font-size: 0.5em;
