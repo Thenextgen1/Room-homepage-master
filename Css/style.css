@@ -81,12 +81,17 @@ a {
     letter-spacing: 8px;
 color: var(--verydarkgray);
     font-weight: 700;
-    font-size: 0.5em
+    font-size: 0.5em;
+    cursor: pointer;
+}
+.innovation p:nth-of-type(2):hover {
+    color: var(--darkGray);
 }
 .innovation p:nth-of-type(3) {
     position: relative;
     left: -3em;
     top: 3.55em;
+    z-index: 1;
 }
 
 .innovation p:nth-of-type(3) .left-arrow,
@@ -123,5 +128,18 @@ font-weight: 700;
     padding-top: 1em;
     line-height: 1.5;
     color: var(--darkGray);
+}
+
+@media(max-width: 576px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .sub-content {
+        flex-direction: column;
+        padding-bottom: 20em;
+    }
+    .content-img {
+        top: -9em;
+    }
 }
  
