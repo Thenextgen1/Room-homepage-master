@@ -133,6 +133,7 @@ font-weight: 700;
 @media(max-width: 576px) {
     .main-content {
         flex-direction: column;
+        padding-right: 0;
     }
     .sub-content {
         flex-direction: column;
@@ -140,6 +141,23 @@ font-weight: 700;
     }
     .content-img {
         top: -9em;
+    }
+    .content-img img {
+       width: 20em;
+        height: auto;
+    }
+    .innovation {
+        position: relative;
+        top: -6em;
+        padding: 0em 0em;
+        padding-left: 2em;
+    }
+    .innovation h2 {
+        text-align: left;
+    }
+    .innovation p:nth-of-type(3) {
+        top: -15.5em;
+        left: 9em;
     }
 }
  
