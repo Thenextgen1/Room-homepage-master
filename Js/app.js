@@ -3,8 +3,8 @@ const desktop = document.querySelector('.desktop')
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 const innovationTitle = document.querySelector('.innovation-title');
-const innovationP = document.querySelector('.innovation-p')
-const arrow = document.querySelector('#arrow')
+const innovationP = document.querySelector('.innovation-p');
+const arrow = document.querySelector('#arrow');
 
 
 let clicks = 0;
