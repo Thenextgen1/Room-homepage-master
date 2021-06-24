@@ -1,4 +1,5 @@
 const mediaQuery = window.matchMedia('(max-width: 576px)');
+const mediaDesktop = window.matchMedia('(min-width: 578px)');
 const desktop = document.querySelector('.desktop')
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
@@ -6,10 +7,6 @@ const innovationTitle = document.querySelector('.innovation-title');
 const innovationP = document.querySelector('.innovation-p');
 const arrow = document.querySelector('#arrow');
 let clicks = 0;
-
-if (mediaQuery.matches) {
-    desktop.src = 'images/mobile-image-hero-1.jpg';
-}
 
 function click() {
     leftArrow.addEventListener('click', () => {
@@ -46,8 +43,36 @@ function click() {
     })
 }
 
+function mobile() {
+    leftArrow.addEventListener('click', () => {
+        clicks--;
+        if (clicks == 0) {
+            desktop.src = 'images/mobile-image-hero-1.jpg';
+            arrow.style.top = '-18.6em';
+        }
+        else if (clicks == 1) {
+            desktop.src = 'images/mobile-image-hero-2.jpg';
+            arrow.style.top = '-18.6em';
+        }
+    })
+    rightArrow.addEventListener('click', () => {
+        clicks++;
+        if (clicks == 1) {
+            desktop.src = 'images/mobile-image-hero-2.jpg';
+            arrow.style.top = '-18.6em';
+        }
+        else if (clicks == 2) {
+            desktop.src = 'images/mobile-image-hero-3.jpg';
+            arrow.style.top = '-18.6em';
+        }
+    })
+}
 
-click();
-
-
+if (mediaDesktop.matches) {
+    click();
+}
+if (mediaQuery.matches) {
+    desktop.src = 'images/mobile-image-hero-1.jpg';
+    mobile();
+}
 
