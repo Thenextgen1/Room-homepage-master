@@ -42,7 +42,6 @@ function click() {
 
     })
 }
-
 function mobile() {
     leftArrow.addEventListener('click', () => {
         clicks--;
@@ -67,7 +66,6 @@ function mobile() {
         }
     })
 }
-
 if (mediaDesktop.matches) {
     click();
 }
